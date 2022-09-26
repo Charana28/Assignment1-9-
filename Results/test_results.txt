@@ -1,0 +1,12 @@
+
+	Paired t-test
+
+data:  clean_data$Weight and clean_data$Gripstrength
+t = 85.156, df = 3, p-value = 3.57e-06
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ 112.8681 121.6319
+sample estimates:
+mean of the differences 
+                 117.25 
+
