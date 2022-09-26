@@ -1,0 +1,17 @@
+Clean the data
+```{r}
+sample_data<-read.csv("KOLANU.csv")
+clean_data <- na.omit(sample_data[sample_data$Frailty != "N", ])
+write.csv(clean_data, "clean_data.csv")
+clean_data
+```
+
+
+
+
+Analysing Data
+```{r}
+op=t.test(clean_data$Weight,clean_data$Gripstrength,paired = TRUE)
+capture.output(op,file="../test_results.txt")
+
+```
